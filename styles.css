@@ -1,0 +1,31 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 250ms ease;
+}
+
+button {
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: all 250ms ease;
+    cursor: pointer;
+}
+
+button[data-action="start"] {
+    background-color: rgb(37, 158, 0);
+}
+button[data-action="start"]:disabled {
+    background-color: rgb(167, 167, 167);
+    color: rgb(190, 190, 190);
+    cursor: auto;
+}
+button[data-action="stop"] {
+    background-color: rgb(204, 0, 0);
+}
